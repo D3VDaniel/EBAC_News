@@ -99,8 +99,7 @@ aside .noticia {
     row-gap: 5%;
 }
 
-/* RESPONSIVO 767px */
-
+/* RESPONSIVO MAX 767px */
 @media screen and (max-width: 767px) {
     .conteudo {
         display: block;
@@ -167,3 +166,28 @@ aside .noticia {
     }
 }
 
+/* RESPONSIVO (MIN 768px e MAX 1023px)  */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+    .destaque .noticia a {
+        font-size: 1.5em;
+    }
+
+    .noticias {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+/* RESPONSIVO (1024px +++) */
+@media screen and (min-width: 1024px) {
+    .botao-menu {
+        display: none;
+    }
+}
